@@ -1,8 +1,20 @@
 import React from 'react';
 
 import MainPage from './MainPage';
-
+// import './grayscale';
+import './jquery.easing.min.js'
 export default class App extends React.Component {
+  componentDidMound() {
+    // function collapseNavbar() {
+    //     if ($(".navbar").offset().top > 50) {
+    //         $(".navbar-fixed-top").addClass("top-nav-collapse");
+    //     } else {
+    //         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    //     }
+    // }
+    // $(this)
+    console.log(this);
+  }
   render() {
     return (
       <div>
