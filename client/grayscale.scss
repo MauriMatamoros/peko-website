@@ -122,6 +122,14 @@ a {
     }
 }
 
+#opacity {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+}
+
 .intro {
     // position: relative;
     // top: 15vh;
@@ -131,16 +139,21 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(/images/33576048586_e2ba346512_o.jpg) no-repeat bottom center scroll;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
+    // background: url(/images/33576048586_e2ba346512_o.jpg) no-repeat bottom center scroll;
+    // background-color: black;
+    // background-size: cover;
+    // background-position: center;
     // -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    // -moz-background-size: cover;
+    // background-size: cover;
+    // -o-background-size: cover;
+
     .intro-body {
-        display: table-cell;
+        position: absolute;
+        top: 25vh;
+        left: 10vw;
+        z-index: 100;
+        // display: table-cell;
         vertical-align: middle;
         .brand-heading {
             font-size: 40px;

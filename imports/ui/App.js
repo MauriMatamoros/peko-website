@@ -17,6 +17,7 @@ export default class App extends React.Component {
         <About/>
         <Download/>
         <Contact/>
+        <Footer/>
       </div>
     );
   };
