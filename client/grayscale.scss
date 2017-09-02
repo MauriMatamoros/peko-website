@@ -130,6 +130,15 @@ a {
   background: rgba(0,0,0,0.5);
 }
 
+// .carousel {
+//   width: 100vw;
+//   height: 100vh;
+//   .carousel-inner .item-active img{
+//     width: 100vw;
+//     height: 100vh;
+//   }
+// }
+
 .intro {
     // position: relative;
     // top: 15vh;
@@ -161,17 +170,10 @@ a {
         .intro-text {
             font-size: 18px;
         }
-    }
-    @media(min-width:768px) {
-        height: 100vh;
-        padding: 0;
-        .intro-body {
-            .brand-heading {
-                font-size: 100px;
-            }
-            .intro-text {
-                font-size: 26px;
-            }
+        @media(max-width:738px) {
+          width: 100vw;
+          left: 0;
+          top: 10vh;
         }
     }
 }

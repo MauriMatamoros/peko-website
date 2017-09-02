@@ -2,6 +2,15 @@ import React from 'react';
 
 export default class Header extends React.Component {
   render() {
+    const styles = {
+      imagesSlide: {
+        width:"100vw",
+        // height: "100vh",
+        backgroundSize: "contain",
+        backgroundPosition: "center"
+      }
+    }
+    const { imagesSlide } = styles;
     return (
       <header className="intro">
         <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -13,15 +22,15 @@ export default class Header extends React.Component {
           </ol>
           <div className="carousel-inner">
             <div className="item active">
-              <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style={{width:"100%"}} />
+              <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style={imagesSlide} />
             </div>
 
             <div className="item">
-              <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style={{width:"100%"}} />
+              <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style={imagesSlide} />
             </div>
 
             <div className="item">
-              <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" style={{width:"100%"}} />
+              <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" style={imagesSlide} />
             </div>
           </div>
           <a className="left carousel-control" href="#myCarousel" data-slide="prev">
