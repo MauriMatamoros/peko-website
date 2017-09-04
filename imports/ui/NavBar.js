@@ -10,7 +10,7 @@ export default class NavBar extends React.Component {
                       Menu <i className="fa fa-bars"></i>
                   </button>
                   <a className="navbar-brand page-scroll" href="#page-top">
-                      <i className="fa fa-play-circle"></i> <span className="light">Start</span> Bootstrap
+                      <img src="/images/PekoLogo.png"/>
                   </a>
               </div>
 
