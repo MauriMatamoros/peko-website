@@ -5,7 +5,7 @@ export default class Header extends React.Component {
     const styles = {
       imagesSlide: {
         width:"100vw",
-        // height: "100vh",
+        height: "100vh",
         backgroundSize: "contain",
         backgroundPosition: "center"
       }
@@ -22,15 +22,15 @@ export default class Header extends React.Component {
           </ol>
           <div className="carousel-inner">
             <div className="item active">
-              <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style={imagesSlide} />
+              <img src="/images/MainImage.jpg" alt="Los Angeles" style={imagesSlide} />
             </div>
 
             <div className="item">
-              <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style={imagesSlide} />
+              <img src="/images/mauri2.jpg" alt="Chicago" style={imagesSlide} />
             </div>
 
             <div className="item">
-              <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" style={imagesSlide} />
+              <img src="/images/mauri3.jpg" alt="New york" style={imagesSlide} />
             </div>
           </div>
           <a className="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -46,9 +46,8 @@ export default class Header extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2">
-                        <h1 className="brand-heading">Grayscale</h1>
-                        <p className="intro-text">A free, responsive, one page Bootstrap theme.
-                            <br/>Created by Start Bootstrap.</p>
+                        <h1 className="brand-heading">Peko</h1>
+                        <p className="intro-text">¿Que Pekos?</p>
                         <a href="#about" className="btn btn-circle page-scroll">
                             <i className="fa fa-angle-double-down animated"></i>
                         </a>
