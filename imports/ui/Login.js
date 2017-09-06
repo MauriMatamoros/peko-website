@@ -2,8 +2,6 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Link } from 'react-router';
 
-import NavBar from './NavBar';
-
 export default class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -27,11 +25,18 @@ export default class Login extends React.Component {
   };
   render() {
     return(
-      <div>
-        <NavBar/>
+      <div className="login-container">
+        <div className="bgVideo">
+          <div className="video-container">
+            <video autoPlay loop muted preload="auto">
+              <source src="assets/pekos_video.mp4" type="video/mp4"></source>
+              Su navegador no soporta video
+            </video>
+          </div>
+        </div>
         <h1>Peko Login</h1>
 
-        {this.state.error ? <p>{this.state.error}</p> : undefined}
+        {this.state.error && <p>{this.state.error}</p>}
 
         <form onSubmit={this.onSubmit.bind(this)} noValidate>
           <input type="email" ref="email" name="email" placeholder="Email"/>
