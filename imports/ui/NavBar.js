@@ -4,10 +4,6 @@ import { Meteor } from 'meteor/meteor';
 
 export default class NavBar extends React.Component {
   render() {
-    let link = null;
-    if (Meteor.userId()) {
-      link = <li><Link to="login"></Link></li>
-    }
     return (
       <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
           <div className="container">
@@ -34,7 +30,6 @@ export default class NavBar extends React.Component {
                       <li>
                           <a className="page-scroll" href="#contact">Contact</a>
                       </li>
-                      {link}
                   </ul>
               </div>
           </div>
