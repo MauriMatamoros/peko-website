@@ -29,12 +29,20 @@ export default class Signup extends React.Component {
   };
   render() {
     return(
-      <div>
+      <div className="login-container">
+        <div className="bgVideo">
+          <div className="video-container">
+            <video autoPlay loop muted preload="auto">
+              <source src="assets/pekos_video.mp4" type="video/mp4"></source>
+              Su navegador no soporta video
+            </video>
+          </div>
+        </div>
         <h1>Join Short Lnk</h1>
 
         {this.state.error ? <p>{this.state.error}</p> : undefined}
 
-        <form onSubmit={this.onSubmit.bind(this)} noValidate>
+        <form onSubmit={this.onSubmit.bind(this)} noValidate className="form-container">
           <input type="email" ref="email" name="email" placeholder="Email"/>
           <input type="password" ref="password" name="password" placeholder="Password"/>
           <button>Create Account</button>

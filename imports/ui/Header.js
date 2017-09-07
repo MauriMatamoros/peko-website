@@ -4,8 +4,8 @@ export default class Header extends React.Component {
   render() {
     const styles = {
       imagesSlide: {
-        width:"100vw",
-        height: "100vh",
+        minWidth:"100vw",
+        minHeight: "100vh",
         backgroundSize: "contain",
         backgroundPosition: "center"
       }
