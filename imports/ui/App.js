@@ -5,6 +5,7 @@ import Header from './Header';
 import About from './About';
 import Download from './Download';
 import Contact from './Contact';
+import CommingSoon from './CommingSoon';
 import Footer from './Footer';
 import '../js/jquery.easing.min.js';
 
@@ -52,6 +53,7 @@ export default class App extends React.Component {
         <About/>
         <Download/>
         <Contact/>
+        <CommingSoon/>
         <Footer/>
       </div>
     );

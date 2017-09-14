@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from 'react-router';
-import { Meteor } from 'meteor/meteor';
+import { Link } from 'react-router';
 
 export default class NavBar extends React.Component {
   render() {
@@ -29,6 +28,9 @@ export default class NavBar extends React.Component {
                       </li>
                       <li>
                           <a className="page-scroll" href="#contact">Contact</a>
+                      </li>
+                      <li>
+                        <Link to="/login">Login</Link>
                       </li>
                   </ul>
               </div>
