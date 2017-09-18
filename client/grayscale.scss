@@ -322,7 +322,13 @@ a {
 }
 
 .content-section {
-    padding-top: 0px;
+    div {
+        padding-top: 20px;
+    }
+    div div a {
+        font-size: 38px;
+        padding: 20px;
+    }
 }
 
 .download-section {
