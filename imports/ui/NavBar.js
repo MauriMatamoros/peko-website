@@ -10,9 +10,9 @@ export default class NavBar extends React.Component {
                   <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                       Menu <i className="fa fa-bars"></i>
                   </button>
-                  <a className="navbar-brand page-scroll" href="#page-top">
+                  <Link className="navbar-brand page-scroll" to="/">
                       <img src="/images/PekoLogo.png"/>
-                  </a>
+                  </Link>
               </div>
 
               <div className="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -28,6 +28,9 @@ export default class NavBar extends React.Component {
                       </li>
                       <li>
                           <a className="page-scroll" href="#contact">Contact</a>
+                      </li>
+                      <li>
+                        <Link to="/showcase">Rutas</Link>
                       </li>
                       <li>
                         <Link to="/login">Login</Link>

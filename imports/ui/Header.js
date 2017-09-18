@@ -47,7 +47,7 @@ export default class Header extends React.Component {
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2">
                         <h1 className="brand-heading">Peko</h1>
-                        <p className="intro-text">¿Que Pekos?</p>
+                        <p className="intro-text">Honduras, Turismo 5 estrellas.</p>
                         <a href="#about" className="btn btn-circle page-scroll">
                             <i className="fa fa-angle-double-down animated"></i>
                         </a>

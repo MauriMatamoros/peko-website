@@ -7,6 +7,7 @@ import App from '../ui/App';
 import Login from '../ui/Login';
 import Signup from '../ui/Signup';
 import Packages from '../ui/Packages';
+import ShowCase from '../ui/ShowCase';
 
 
 const unauthenticatedPages = ['/', '/signup', '/login'];
@@ -36,6 +37,7 @@ export const onAuthChange = (isAuthenticated) => {
 export const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App} onEnter={onEnterPublicPage}/>
+    <Route path="/showcase" component={ShowCase} onEnter={onEnterPublicPage}/>
     <Route path="/login" component={Login} onEnter={onEnterPublicPage}/>
     <Route path="/signup" component={Signup} onEnter={onEnterPublicPage}/>
     <Route path="/packages" component={Packages} onEnter={onEnterPrivatePage}/>
