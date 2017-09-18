@@ -38,6 +38,9 @@ export default class Signup extends React.Component {
             </video>
           </div>
         </div>
+        <Link to="/">
+          <img id="pekologo-login" src="/images/PekoLogo.png"/>
+        </Link>
         <h1>Join Short Lnk</h1>
 
         {this.state.error ? <p>{this.state.error}</p> : undefined}

@@ -34,6 +34,9 @@ export default class Login extends React.Component {
             </video>
           </div>
         </div>
+        <Link to="/">
+          <img id="pekologo-login" src="/images/PekoLogo.png"/>
+        </Link>
         <h1>Peko Login</h1>
 
         {this.state.error && <p>{this.state.error}</p>}
