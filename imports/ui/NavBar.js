@@ -30,7 +30,10 @@ export default class NavBar extends React.Component {
                           <a className="page-scroll" href="#contact">Contact</a>
                       </li>
                       <li>
-                        <Link to="/showcase">Rutas</Link>
+                        <Link to="/showcase">Tour Packages</Link>
+                      </li>
+                      <li>
+                        <Link to="/routes">Routes</Link>
                       </li>
                       <li>
                         <Link to="/login">Login</Link>
